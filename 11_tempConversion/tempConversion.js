@@ -3,7 +3,7 @@ const convertToCelsius = function(temp) {
   return parseFloat(stringCelciusTemp);
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(temp) {
   let stringFahrenheitTemp = (temp * (9/5) + 32).toFixed(1);
   return parseFloat(stringFahrenheitTemp);
 };
