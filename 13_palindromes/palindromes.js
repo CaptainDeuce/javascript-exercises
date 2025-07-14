@@ -1,6 +1,6 @@
 const palindromes = function (string) {
     let isPalindrome = true;
-    let lowerNoSpaceNoPunctuation = string.toLowerCase().replaceAll(" ", "").replace(/[^a-zA-Z\s]/g, '');
+    let lowerNoSpaceNoPunctuation = string.toLowerCase().replaceAll(" ", "").replace(/[^a-zA-Z0-9\s]/g, '');
     let stringArr = lowerNoSpaceNoPunctuation.split("");
     for (let i = 0; i < stringArr.length; i++) {
         if (stringArr[i] !== stringArr.reverse()[i]) {
