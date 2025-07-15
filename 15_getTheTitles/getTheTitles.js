@@ -1,5 +1,9 @@
 const getTheTitles = function(arr) {
-    return arr.filter((item) => item.title);
+    let titleArr = [];
+    for (let item of arr) {
+        titleArr.push(item.title);
+    }
+    return titleArr;
 };
 
 // Do not edit below this line
