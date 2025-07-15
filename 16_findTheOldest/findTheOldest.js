@@ -7,9 +7,15 @@ const findTheOldest = function(arr) {
     // }, currentOldest);
 
     let oldest = {};
+    let age = 0;
     let currentAge = 0;
+    let currentDate = new Date();
     for (let i = 0; i < arr.length; i++) {
-        let age = arr[i].yearOfDeath - arr[i].yearOfBirth;
+        if ("yearOfDeath" in arr[i]) {
+            age = arr[i].yearOfDeath - arr[i].yearOfBirth;
+        } else {
+            age = currentDate.getFullYear() - arr[i].yearOfBirth;
+        }
         if (age >= currentAge) {
             currentAge = age;
             oldest = arr[i];
