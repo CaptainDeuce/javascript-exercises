@@ -1,6 +1,7 @@
 const fibonacci = function(number) {
     let fibNumber = 0;
     if (number === 1 || number === 2) {return 1}
+    if (number < 0) {return "OOPS"}
 
     let current = 1;
     let previous = 1;
