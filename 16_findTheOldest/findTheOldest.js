@@ -1,11 +1,4 @@
 const findTheOldest = function(arr) {
-    // let currentOldest = 0;
-    // let oldest = arr.reduce((item) => {
-    //     if ((item.yearOfDeath - item.yearOfBirth) < currentOldest) {
-    //         return currentOldest;
-    //     }
-    // }, currentOldest);
-
     let oldest = {};
     let age = 0;
     let currentAge = 0;
